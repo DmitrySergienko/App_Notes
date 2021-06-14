@@ -1,11 +1,9 @@
 package ru.ds.app_notes;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-
+//создаю фрагменты
     public void onClickMain(View view) {
         //создаю инстанс фрагмента
         FragmentMain fMain = new FragmentMain();
@@ -27,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         ft.replace(R.id.cont, fMain);
         //запускаем
         ft.commit();
+
+        Intent intent = new Intent(MainActivity.this,FragmentMain.class);
+
     }
 
     public void onClickPhoto(View view) {
