@@ -1,53 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="4"
-    android:orientation="horizontal"
-    tools:context=".MainActivity"
-    style="@android:style/ButtonBar">
+    tools:context=".MainActivity">
 
-
-    <com.google.android.material.button.MaterialButton
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@android:style/ButtonBar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_height"
-        android:textSize="@dimen/btn_text_size"
-        android:layout_weight="1"
-        android:onClick="onClickMain"
-        android:text="@string/main">
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
 
-    </com.google.android.material.button.MaterialButton>
 
-    <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_weight="1"
+            android:onClick="onClickMain"
+            android:text="@string/main"
+            android:textSize="@dimen/btn_text_size">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_weight="1"
+            android:onClick="onClickDescr"
+            android:text="@string/description"
+            android:textSize="@dimen/btn_text_size">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_weight="1"
+            android:onClick="onClickPhoto"
+            android:text="@string/photo"
+            android:textSize="@dimen/btn_text_size">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_weight="1"
+            android:onClick="onClickSettings"
+            android:text="@string/Settings"
+            android:textSize="@dimen/btn_text_size">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cont"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_height"
-        android:layout_weight="1"
-        android:onClick="onClickDescr"
-        android:textSize="@dimen/btn_text_size"
-        android:text="@string/description">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    </com.google.android.material.button.MaterialButton>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_height"
-        android:layout_weight="1"
-        android:onClick="onClickPhoto"
-        android:textSize="@dimen/btn_text_size"
-        android:text="@string/photo">
-
-    </com.google.android.material.button.MaterialButton>
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_height"
-        android:layout_weight="1"
-        android:onClick="onClickSettings"
-        android:textSize="@dimen/btn_text_size"
-        android:text="@string/Settings">
-
-    </com.google.android.material.button.MaterialButton>
-
-</LinearLayout>
