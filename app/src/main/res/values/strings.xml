@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">App_Notes</string>
+    <string name="main">Main</string>
+    <string name="description">Описание</string>
+    <string name="photo">Фото</string>
+    <string name="Settings">Настройки</string>
 </resources>
