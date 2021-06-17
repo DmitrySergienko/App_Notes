@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">App_Notes</string>
+    <string name="main">Main</string>
+    <string name="description">Описание</string>
+    <string name="photo">Фото</string>
+    <string name="Settings">Настройки</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_of_fr_main">Вернуться</string>
+    <string name="item_1">Азия</string>
+    <string name="item_2">Южная Америка</string>
+    <string name="item_3">Северная Америка</string>
+    <string name="item_4">Африка</string>
+    <string name="item_5">Европа</string>
+    <string name="item_6">Антарктида</string>
+    <string name="item_7">Австралия и Океания</string>
+    <string name="item_8">Австралия</string>
+    <string name="search">Search</string>
 </resources>

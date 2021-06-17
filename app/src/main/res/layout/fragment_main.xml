@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMain"
+    android:id="@+id/fr_main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:text="@string/item_1"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_view_size"
+            app:cornerRadius="@dimen/btn_radius" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_2"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_3"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_4"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_5"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_6"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Tv_MainFr8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/item_8"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            app:cornerRadius="@dimen/btn_radius"
+            android:textSize="@dimen/text_view_size" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
