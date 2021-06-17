@@ -27,6 +27,12 @@
             android:textSize="30sp">
         </com.google.android.material.textview.MaterialTextView>
 
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test">
+
+        </com.google.android.material.textview.MaterialTextView>
 
 
     </LinearLayout>
